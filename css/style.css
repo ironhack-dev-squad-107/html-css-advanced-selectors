@@ -1,0 +1,53 @@
+/*
+ * Child Selector (all the <li> CHILDREN of tags with class "menu")
+ */
+.menu > li {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 3px;
+  list-style: none;
+}
+
+em {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+ * Descendant Selector (all the <em> DESCENDANTS of tags with class "list")
+ */
+.list em {
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+section {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*
+ * Comma (apply this rule to all these tags)
+ * - keep your CSS DRY
+ */
+html,
+body,
+section {
+  height: 90%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.margin-zero {
+  margin: 0;
+}
